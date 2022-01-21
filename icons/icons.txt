@@ -1,0 +1,8 @@
+- assinar - ok
+- connect wallet - ok
+- game start - ok
+- heros - ok    
+- mana - ok
+- work - ok 
+- back 
+- close - ok

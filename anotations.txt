@@ -1,0 +1,2 @@
+- é preciso criar um auto config para gerar as imagens dos icones automaticamente
+  usando o "pyautogui.screenshot" e recortar as imagens
