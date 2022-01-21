@@ -1,2 +1,2 @@
 # boom
-Bomb Crypto Bot in python
+Bombcrypto Bot in python
