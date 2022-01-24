@@ -21,7 +21,7 @@ def is_heros_screen():
 
 def get_heros_screen():
 
-    locationsMana = auto.locateAllOnScreen('icons/ic_mana.png', confidence=0.7)
+    locationsMana = auto.locateAllOnScreen('icons/ic_mana.png', confidence=0.8)
     locsMana = []
     atual = 0
 
@@ -41,6 +41,11 @@ def close():
 def work():
 
     mouse_scroll = 2000
+
+    #mover para o local dos herois
+    wdt, hgt = auto.size()
+    auto.moveTo(wdt / 2, 340, duration=helper.move_rand())
+    time.sleep(1)
 
     while(mouse_scroll > 0):
 

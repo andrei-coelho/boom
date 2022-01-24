@@ -6,9 +6,18 @@ import helper
 
 
 def running():
+    
     auto.moveTo(20, 120, duration=helper.move_rand())
-    time.sleep(60 * 30)
-    return True
+    
+    parte = 1
+    while parte < 7:
+        time.sleep(60 * 5)
+        if helper.is_ok_window():
+            helper.click_ok()
+            return True
+        parte+=1
+    
+    return False
     
 
 def is_on():

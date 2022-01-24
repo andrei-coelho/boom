@@ -21,7 +21,7 @@ def click_btn(icon):
     tentativa = 0
 
     while btn is None:
-        btn = auto.locateOnScreen('icons/'+icon, confidence=0.7)
+        btn = auto.locateOnScreen('icons/'+icon, confidence=0.8)
         tentativa+=1
         time.sleep(1)
         if tentativa == 12: return False
@@ -36,7 +36,7 @@ def click_btn(icon):
 
 
 def is_ok_window():
-    btnOk = auto.locateOnScreen('icons/ic_ok.png', confidence=0.7)
+    btnOk = auto.locateOnScreen('icons/ic_ok.png', confidence=0.8)
     return btnOk is not None
 
 
