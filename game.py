@@ -11,11 +11,11 @@ def running():
     
     parte = 1
     while parte < 7:
-        
+
         time.sleep(60 * 5)
-        helper.click_btn("icons/ic_back.png")
+        helper.click_btn("ic_back.png")
         time.sleep(3)
-        helper.click_btn("icons/ic_game.png")
+        helper.click_btn("ic_game.png")
         
         if helper.is_ok_window():
             helper.click_ok()
