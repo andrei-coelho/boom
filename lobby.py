@@ -32,7 +32,7 @@ def to_game():
 
 def to_heros():
     try:
-        helper.click_btn('ic_heros.png')
+        helper.click_btn('ic_heros.png', confidence=0.6)
         return True
     except:
         return False

@@ -40,7 +40,7 @@ def close():
 
 def work():
 
-    mouse_scroll = 2000
+    mouse_scroll = 5000
 
     #mover para o local dos herois
     wdt, hgt = auto.size()
@@ -54,17 +54,18 @@ def work():
         if len(locsMana) == 0: print("Nenhum heroi")
         
         for loc in locsMana:
-
-            btn = auto.locateOnScreen('icons/ic_work.png', confidence=0.7, region=(loc.left + (550 - int(loc.left)), loc.top - 30, 100, 60))
+            btn = auto.locateOnScreen('icons/ic_work.png', confidence=0.7, region=(loc.left + (370 - int(loc.left)), loc.top - 30, 100, 60))
             if not btn == None:
-                auto.moveTo(loc.left + (600 - int(loc.left)), loc.top, helper.move_rand())
+                auto.moveTo(loc.left + (420 - int(loc.left)), loc.top, helper.move_rand())
                 time.sleep(0.5)
                 auto.click()
                 time.sleep(0.6)
 
         mouse_scroll -= 300
         auto.scroll(-300)
-        time.sleep(0.5)
+        auto.scroll(-300)
+        auto.scroll(-300)
+        time.sleep(0.8)
 
     close()
 

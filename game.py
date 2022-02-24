@@ -11,7 +11,11 @@ def running():
     
     parte = 1
     while parte < 7:
+<<<<<<< HEAD
+        
+=======
 
+>>>>>>> 5dc035bfbe1482574daabc50e45cccd1848fe085
         time.sleep(60 * 5)
         helper.click_btn("ic_back.png")
         time.sleep(3)
@@ -19,10 +23,14 @@ def running():
         
         if helper.is_ok_window():
             helper.click_ok()
+<<<<<<< HEAD
+            helper.refresh()
+=======
+>>>>>>> 5dc035bfbe1482574daabc50e45cccd1848fe085
             return False
 
         parte+=1
-    
+    helper.refresh()
     return False
     
 

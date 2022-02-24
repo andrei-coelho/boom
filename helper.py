@@ -15,13 +15,13 @@ def refresh():
     auto.press("f5")
 
 
-def click_btn(icon):
+def click_btn(icon, confidence=0.7):
     
     btn = None
     tentativa = 0
 
     while btn is None:
-        btn = auto.locateOnScreen('icons/'+icon, confidence=0.8)
+        btn = auto.locateOnScreen('icons/'+icon, confidence=confidence)
         tentativa+=1
         time.sleep(1)
         if tentativa == 12: return False
@@ -36,7 +36,7 @@ def click_btn(icon):
 
 
 def is_ok_window():
-    btnOk = auto.locateOnScreen('icons/ic_ok.png', confidence=0.8)
+    btnOk = auto.locateOnScreen('icons/ic_ok.png', confidence=0.7)
     return btnOk is not None
 
 
