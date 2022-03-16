@@ -5,13 +5,13 @@ import helper
 
 def start():
     
-    print("Conectando em 4 segundos...")
-    time.sleep(4)
+    print("Conectando em 8 segundos...")
+    time.sleep(8)
 
     scren = auto.size()
     xMiddleScren = int(scren.width / 2)
     yMiddleScren = int(scren.height / 2)
-    posConnect = yMiddleScren + 220
+    posConnect = yMiddleScren + 300
 
     auto.moveTo(xMiddleScren, posConnect, duration=0.5)
     auto.click()
